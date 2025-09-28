@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import {settingsQuery} from '@/sanity/lib/queries'
 import {sanityFetch} from '@/sanity/lib/live'
+import Image from 'next/image'
 
 export default async function Header() {
   const {data: settings} = await sanityFetch({
@@ -8,13 +9,16 @@ export default async function Header() {
   })
 
   return (
-    <header className="fixed z-50 h-24 inset-0 bg-white/80 flex items-center backdrop-blur-lg">
+    <header className="fixed z-50 h-24 inset-0 bg-white/75 flex items-center backdrop-blur-lg">
       <div className="container py-6 px-2 sm:px-6">
         <div className="flex items-center justify-between gap-5">
           <Link className="flex items-center gap-2" href="/">
-            <span className="text-lg sm:text-2xl pl-2 font-semibold">
-              {settings?.title || 'Sanity + Next.js'}
-            </span>
+            <Image 
+            src={'/images/bill-builders.jpg'}
+            width={30}
+            height={30} 
+            alt='bill builder logo'
+            />
           </Link>
 
           <nav>
