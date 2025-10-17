@@ -101,9 +101,10 @@ export default function BillBuilderLanding() {
                   Simple & Beautiful
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Create, send, and track professional invoices in minutes. Get paid faster with Bill Builder's intuitive platform designed for modern businesses.
-              </p>
+             <p className="text-xl text-gray-600 leading-relaxed">
+  Create, send, and track professional invoices in minutes. Get paid faster with Bill Builder&rsquo;s intuitive platform designed for modern businesses.
+</p>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="px-8 py-4 rounded-lg text-white font-semibold text-lg transition-all hover:scale-105 hover:shadow-2xl" style={{backgroundColor: '#06402B'}}>
                   Start Free Trial
