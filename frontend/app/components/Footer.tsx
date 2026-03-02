@@ -1,18 +1,33 @@
-import { FileText } from "lucide-react";
+import Link from 'next/link'
+import {FileText} from 'lucide-react'
 
 export default function Footer() {
   return (
-     <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{backgroundColor: '#06402B'}}>
-              <FileText className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold">Bill Builder</span>
+    <footer className="bg-gray-900 px-4 py-12 text-white sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl text-center">
+        <div className="mb-4 flex items-center justify-center space-x-2">
+          <div
+            className="flex h-10 w-10 items-center justify-center rounded-lg"
+            style={{backgroundColor: '#06402B'}}
+          >
+            <FileText className="h-6 w-6 text-white" />
           </div>
-          <p className="text-gray-400 mb-4">Invoicing made simple and beautiful</p>
-          <p className="text-gray-500 text-sm">© 2025 Bill Builder. All rights reserved.</p>
+          <span className="text-2xl font-bold">Bill Builder</span>
         </div>
-      </footer>
+        <p className="mb-4 text-gray-400">Invoicing made simple and beautiful</p>
+        <div className="mb-4 flex items-center justify-center gap-6 text-sm">
+          <Link className="text-gray-300 transition hover:text-white" href="/privacy">
+            Privacy
+          </Link>
+          <Link className="text-gray-300 transition hover:text-white" href="/terms">
+            Terms
+          </Link>
+          <Link className="text-gray-300 transition hover:text-white" href="/delete-account">
+            Delete Account
+          </Link>
+        </div>
+        <p className="text-sm text-gray-500">© 2025 Bill Builder. All rights reserved.</p>
+      </div>
+    </footer>
   )
 }

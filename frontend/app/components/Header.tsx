@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
@@ -21,14 +22,14 @@ export default function Header() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2" aria-label="Bill Builder home">
               <Image
                 src={'/images/bb-logo.png'}
                 height={120}
                 width={120}
                 alt='logo'
               />
-            </div>
+            </Link>
             
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-700 hover:text-[#06402B] transition-colors">Features</a>
