@@ -20,7 +20,8 @@
     "@vercel/speed-insights": "^1.2.0",
     "autoprefixer": "^10.4.21",
     "date-fns": "^4.1.0",
-    "next": "^15.5.0",
+    "lucide-react": "^0.470.0",
+    "next": "^15.5.12",
     "next-sanity": "^10.0.14",
     "postcss": "^8.5.6",
     "react": "^19.1.1",
@@ -28,15 +29,14 @@
     "sanity": "^4.5.0",
     "sonner": "^2.0.7",
     "styled-components": "^6.1.19",
-    "tailwindcss": "^4.1.12",
-    "lucide-react": "^0.470.0"
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@types/node": "^20.19.11",
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
     "eslint": "^9.34.0",
-    "eslint-config-next": "^15.5.0",
+    "eslint-config-next": "^15.5.12",
     "typescript": "5.9.2"
   }
 }
